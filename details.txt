@@ -1,0 +1,59 @@
+install shadcn
+npm install uploadthing @uploadthing/react for the uploading purposes 
+in layout folder update text type
+
+now create to different folders auth and root in app section .
+In root folder create another "layout file " which helps in rendering the nav and footer section in specific pages.
+
+now we create an header and footer section in "Shared folder in Component section".
+Now we use "Clerk" for authentication. 
+Login in Cleark website and choose which options we have to provide to use for their authentication.
+
+Create .env.local file for linking the clerk with the app .
+now create a middleware for the clerk auth .
+after that we are creating signout botton in header.
+
+now we create routes for sign-in and up , for that we create an sign-in and sign-up folder in (auth) folder.
+and also update local variables of sign-in and sign-up
+
+then we create newitems for desktop (/Components/shared.NavItems.) and for mobile(/Components/shared/MobileNav) .
+
+
+now we use shadcn Component sheet for mobile navbar. 
+after creating a sliding nav bar create the nav bar element link.
+then me style for active click using pathname
+
+const pathname = usePathname(); (in NavItems)
+
+---------- Now we Create footer of our application
+
+then we create our hero section frontend.
+
+then its time to create our backend.
+
+>>lib>>database>>index.ts
+
+GO ON  mongodb atlas and create an mongodb cluster.
+alters that use the conncetion string code for establising the conncetion between the Mongo Atlas and our application. 
+now for that we using cashing method because in serverless application server action will render again and again that it will continue call the database. for handling that case we use Caching function for our database.
+ 
+now we can create our database models 1. user.model and 2. event.models
+
+now we use web hook for creating the database user as similar to the clerk user .
+
+for this we have to connect webhooks with clerk for that we use the documentation of clerk webhook.
+
+firstly we install svix for that.
+
+then we upgrade the inbuild app/api/webhooks/route.ts code.
+
+for creating the new user .
+
+for that create the 1st database action function in actions folder.[which create a newUser function].
+
+
+in lib/utils .
+we create all general use fuction and from that we use error handling function for our createUser fuction in actions folder. 
+
+now we create deletion updation function in webhook for that we use database models of order, events and user model with the help of model we create // user.action model which help us to create webhook route.ts
+
