@@ -14,7 +14,7 @@ import { FileUploader } from "./FileUploader"
 import { useState } from "react"
 import Image from "next/image"
 import { useUploadThing } from '@/lib/uploadthing'
-import DatePicker from "react-datepicker";
+// import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Checkbox } from "../ui/checkbox"
 import { useRouter } from "next/navigation"
@@ -202,14 +202,14 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                       className="filter-grey"
                     />
                     <p className="ml-3 whitespace-nowrap text-grey-600">Start Date:</p>
-                    <DatePicker
+                    {/* <DatePicker
                       selected={field.value}
                       onChange={(date: Date) => field.onChange(date)}
                       showTimeSelect
                       timeInputLabel="Time:"
                       dateFormat="MM/dd/yyyy h:mm aa"
                       wrapperClassName="datePicker"
-                    />
+                    /> */}
                   </div>
 
                 </FormControl>
@@ -233,14 +233,14 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                       className="filter-grey"
                     />
                     <p className="ml-3 whitespace-nowrap text-grey-600">End Date:</p>
-                    <DatePicker
+                    {/* <DatePicker
                       selected={field.value}
                       onChange={(date: Date) => field.onChange(date)}
                       showTimeSelect
                       timeInputLabel="Time:"
                       dateFormat="MM/dd/yyyy h:mm aa"
                       wrapperClassName="datePicker"
-                    />
+                    /> */}
                   </div>
 
                 </FormControl>
